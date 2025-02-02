@@ -1,25 +1,70 @@
-/* Add screen styles below */
+/* Highlight the active page link */
 a.active {
     font-weight: bold;
 }
 
+/* Style the list container */
 #example1 {
     list-style-type: none;
     padding: 0;
+    width: 300px; /* Keeps the list neat */
+    margin: auto; /* Centers it */
 }
 
+/* Style the list items */
 #example1 li {
     margin: 10px;
     padding: 15px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 800;
     color: white;
     background-color: #2EC4B6;
     border: 1px solid #000000;
     cursor: grab;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
 }
 
+/* Change background color on hover */
+#example1 li:hover {
+    background-color: #20a393;
+}
+
+/* Change cursor style when grabbing */
+#example1 li:active {
+    cursor: grabbing;
+    opacity: 0.8;
+}
+
+/* Style the dragged item */
+.blue-background-class {
+    background-color: #FF9F1C !important; /* Highlight the dragged item */
+    color: black;
+    opacity: 0.7;
+}
+
+/* Style the main heading */
 h1 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #FF9F1C;
+    text-align: center;
+}
+
+/* Style the topic heading */
+h2 {
+    font-family: 'Lucida Sans', sans-serif;
+    color: #2EC4B6;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style the paragraph */
+p {
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 16px;
+    color: #333;
+    max-width: 500px;
+    line-height: 1.5;
+    text-align: center;
+    margin: auto;
 }
